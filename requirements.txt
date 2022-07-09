@@ -1,0 +1,9 @@
+api.py
+gunicorn==20.1.0
+flask==2.0.3
+numpy==1.22.3
+pandas
+json
+urllib
+datetime
+xmltodict
