@@ -3,6 +3,4 @@ gunicorn==20.1.0
 flask==2.0.3
 numpy==1.22.3
 pandas==1.2.4
-urllib==1.26.4
-datetime
 xmltodict==0.12.0
