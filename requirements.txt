@@ -2,8 +2,8 @@ api.py
 gunicorn==20.1.0
 flask==2.0.3
 numpy==1.22.3
-pandas
-json
-urllib
+pandas==1.2.4
+json==0.9.5
+urllib==1.26.4
 datetime
-xmltodict
+xmltodict==0.12.0
