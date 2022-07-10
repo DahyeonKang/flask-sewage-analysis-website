@@ -39,7 +39,10 @@ class load_data():
         decode_data = response_body.decode('utf-8')
         xml_parse = xmltodict.parse(decode_data)
         xml_dict = json.loads(json.dumps(xml_parse))
-        rawdata = list(xml_dict['response']['body']['items'].values())
+        try:
+            rawdata = list(xml_dict['response']['body']['items'].values())
+        except AttributeError:
+            return
 
         df_temp = []
 
@@ -64,28 +67,31 @@ class load_data():
         return df
 
     def merge_function(self, locnm, loccd):
-        params = self.param(loccd)
-        return self.make_dateframe(params, locnm).to_html(show_dimensions=True)
+        try:
+            params = self.param(loccd)
+            return self.make_dateframe(params, locnm).to_html(show_dimensions=True)
+        except AttributeError:
+            return 0
 
-    def data_4710_as(self):
+    def data_4710_aas(self):
         return self.merge_function("아산", "4710")
 
     def data_42730_dn(self):
         return self.merge_function("둔내", "42730")
 
-    def data_47000_ys(self):
-        return self.merge_function("연서", "47000")
-
     def data_42730_wh(self):
         return self.merge_function("우항", "42730")
+
+    def data_47000_ys(self):
+        return self.merge_function("연서", "47000")
 
     def data_47750_ad(self):
         return self.merge_function("안덕", "47750")
 
-    def data_47850_om(self):
+    def data_47850_ym(self):
         return self.merge_function("약목", "47850")
 
-    def data_47850_og(self):
+    def data_47850_wg(self):
         return self.merge_function("왜관", "47850")
 
     def data_48000_ng(self):

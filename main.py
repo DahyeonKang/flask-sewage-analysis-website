@@ -1,6 +1,5 @@
 from flask import Flask, render_template
-# import socket
-# from api.load_data import
+from api import load_data
 
 app = Flask(__name__)
 
@@ -23,17 +22,17 @@ def past():
 
 @app.route('/오늘의 수치')
 def present():
-    # api = load_data()
-    # aas = api.data_4710_as()
-    # dn = api.data_42730_dn()
-    # wh = api.data_42730_wh()
-    # ad = api.data_47750_ad()
-    # ys = api.data_47000_ys()
-    # og = api.data_47850_og()
-    # om = api.data_47850_om()
-    # ng = api.data_48000_ng()
-    # sh = api.data_48000_sh()
-    return render_template('present.html')#, aas=aas) # dn, wh, ad, ys, og, om, ng, sh]
+    api = load_data()
+    aas = api.data_4710_aas()
+    dn = api.data_42730_dn()
+    wh = api.data_42730_wh()
+    ys = api.data_47000_ys()
+    ad = api.data_47750_ad()
+    ym = api.data_47850_ym()
+    wg = api.data_47850_wg()
+    ng = api.data_48000_ng()
+    sh = api.data_48000_sh()
+    return render_template('present.html', aas=aas, dn=dn, wh=wh, ys=ys, ad=ad, ym=ym, wg=wg, ng=ng, sh=sh)
 
 
 @app.route('/미래의 수치')
@@ -62,7 +61,4 @@ def elements():
 
 
 if __name__ == "__main__":
-    # app.run(host=socket.gethostbyname(socket.gethostname()), debug=True)
-    # app.run(host='0.0.0.0', port=5000, debug=True)
-    # app.run(port=5000, debug=True)
     app.run()

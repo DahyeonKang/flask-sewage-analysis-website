@@ -15,10 +15,6 @@
     </head>
     <body class="is-preload">
 
-{#    <script>#}
-{#        var someJavaScriptVar1 = '{{ dh_data[0] }}';#}
-{#    </script>#}
-
         <!-- Wrapper -->
         <div id="wrapper">
 
@@ -64,75 +60,88 @@
                             </i>
                             <p>각 하수처리장 별로 가지고 있는 가장 최근 데이터를 보여줍니다.</p>
 {#                            {{ today_data | safe }}#}
-                            <select name="job">
-                                <option value="">지역 선택</option>
-                                <option value="아산">아산</option>
-                                <option value="둔내">둔내</option>
-                                <option value="연서">연서</option>
-                                <option value="연서">연서</option>
-                                <option value="우항">우항</option>
-                                <option value="안덕">안덕</option>
-                                <option value="약목">약목</option>
-                                <option value="왜관">왜관</option>
-                                <option value="능곡">능곡</option>
-                                <option value="시화">시화</option>
+                            <select id="areaSelect" name="areaSelect" onchange="takeApi(this.value);">
+                                <option value="">--지역 선택--</option>
+                                <option value="aas">아산</option>
+                                <option value="dn">둔내</option>
+                                <option value="wh">우항</option>
+                                <option value="ys">연서</option>
+                                <option value="ad">안덕</option>
+                                <option value="ym">약목</option>
+                                <option value="wg">왜관</option>
+                                <option value="ng">능곡</option>
+                                <option value="sh">시화</option>
                             </select>
+                            <script>
+                                function takeApi(Val){
+                                    if (Val == ''){}
+                                    else if (Val == 'aas'){
+                                        {{ aas | safe }};
+                                    }else if (Val == 'dn'){
+                                        {{ dn | safe }};
+                                    }else if (Val == 'wh'){
+                                        {{ wh | safe }};
+                                    }else if (Val == 'ys'){
+                                        {{ ys | safe }};
+                                    }else if (Val == 'ad'){
+                                        {{ ad | safe }};
+                                    }else if (Val == 'ym'){
+                                        {{ ym | safe }};
+                                    }else if (Val == 'wg'){
+                                        {{ wg | safe }};
+                                    }else if (Val == 'ng'){
+                                        {{ ng | safe }};
+                                    }else if (Val == 'sh'){
+                                        {{ sh | safe }};
+                                    }
+                                }
+                            </script>
+<!--                            <script>-->
+<!--                                $(document).ready(function() {-->
+<!--                                      $('#areaSelect').change(function() {-->
+<!--                                        var result = $('#areaSelect option:selected').val();-->
+<!--                                        if (result == 'aas') {-->
+<!--                                          $('.div1').show();-->
+<!--                                        } else {-->
+<!--                                          $('.div1').hide();-->
+<!--                                        }-->
+<!--                                      });-->
+<!--                                    });-->
+<!--                            </script>-->
                         </div>
                     </section>
                 </div>
 
-            <!-- Contact -->
-                <section id="contact">
-                    <div class="inner">
-                        <section>
-                            <form method="post" action="#">
-                                <div class="fields">
-                                    <div class="field half">
-                                        <label for="name">Name</label>
-                                        <input type="text" name="name" id="name"/>
-                                    </div>
-                                    <div class="field half">
-                                        <label for="email">Email</label>
-                                        <input type="text" name="email" id="email"/>
-                                    </div>
-                                    <div class="field">
-                                        <label for="message">Message</label>
-                                        <textarea name="message" id="message" rows="6"></textarea>
-                                    </div>
-                                </div>
-                                <ul class="actions">
-                                    <li><input type="submit" value="Send Message" class="primary"/></li>
-                                    <li><input type="reset" value="Clear"/></li>
-                                </ul>
-                            </form>
-                        </section>
-                        <section class="split">
-                            <section>
-                                <div class="contact-method">
-                                    <span class="icon solid alt fa-envelope"></span>
-                                    <h3>Email</h3>
-                                    <a href="#">information@untitled.tld</a>
-                                </div>
-                            </section>
-                            <section>
-                                <div class="contact-method">
-                                    <span class="icon solid alt fa-phone"></span>
-                                    <h3>Phone</h3>
-                                    <span>(000) 000-0000 x12387</span>
-                                </div>
-                            </section>
-                            <section>
-                                <div class="contact-method">
-                                    <span class="icon solid alt fa-home"></span>
-                                    <h3>Address</h3>
-                                    <span>1234 Somewhere Road #5432<br/>
-                                                    Nashville, TN 00000<br/>
-                                                    United States of America</span>
-                                </div>
-                            </section>
-                        </section>
-                    </div>
-                </section>
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="mailto:kl1223k@naver.com">kl1223k@naver.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(+82) 010-5897-4600</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>충북대학교 자연과학대학 5호관<br />
+										Kor) 충청북도 청주시 서원구 충대로 1<br />
+										Eng) Chungju city of South Korea</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
 
             <!-- Footer -->
                 <footer id="footer">
