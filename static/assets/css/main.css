@@ -2832,17 +2832,17 @@ input, select, textarea {
 
 			.tiles article:nth-child(6n - 5):before {
 				/*background-color: #6fc3df;*/
-				background-color: #ffc9c9; /*분홍색*/
+				background-color: #dbf5ff;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
 				/*background-color: #8d82c4;*/
-				background-color: #fff893; /*노란색*/
+				background-color: #b5eaff;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
 				/*background-color: #ec8d81;*/
-				background-color: #badbff; /*하늘색*/
+				background-color: #8bdcfc;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
@@ -3262,15 +3262,15 @@ input, select, textarea {
 		}
 
 			#header.alt.style1 .logo strong {
-				color: #6fc3df;
+				color: #dbf5ff;
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #8d82c4;
+				color: #b5eaff;
 			}
 
 			#header.alt.style3 .logo strong {
-				color: #ec8d81;
+				color: #8bdcfc;
 			}
 
 			#header.alt.style4 .logo strong {
@@ -3494,15 +3494,15 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #6fc3df;
+			background-color: #dbf5ff;
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-color: #b5eaff;
 		}
 
 		#banner.style3:after {
-			background-color: #ec8d81;
+			background-color: #8bdcfc;
 		}
 
 		#banner.style4:after {
