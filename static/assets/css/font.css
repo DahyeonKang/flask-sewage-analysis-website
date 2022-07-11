@@ -1,0 +1,14 @@
+/*font source is CBNU site (http://www.chungbuk.ac.kr/site/70th/sub.do?key=1819) here.*/
+
+@font-face {
+    font-family: 'cbnu70-Regular';
+    font-weight: normal;
+    font-display:block;
+    src: url('../fonts/충북대학교70주년체_Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cbnu70-Bold';
+    font-weight: normal;
+    font-display:block;
+    src: url('../fonts/충북대학교70주년체_Bold.ttf') format('truetype');
+}

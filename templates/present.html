@@ -58,55 +58,21 @@
                                 </h4>
                             </i>
                             <p>각 하수처리장 별로 가지고 있는 가장 최근 데이터를 보여줍니다.</p>
-                            <select id="areaSelect" name="areaSelect" onchange="takeApi();">
-                                <option value="" selected>(지역을 선택하시오)</option>
-                                <option value="ng">능곡</option>
-                                <option value="dn">둔내</option>
-                                <option value="sh">시화</option>
-                                <option value="aas">아산</option>
-                                <option value="ad">안덕</option>
-                                <option value="ym">약목</option>
-                                <option value="ys">연서</option>
-                                <option value="wg">왜관</option>
-                                <option value="wh">우항</option>
-                            </select>
-                            <script>
-                                function takeApi(Val){
-                                    var ng = {{ng|safe}};
-                                    var dn = {{dn|safe}};
-                                    var sh = {{sh|safe}};
-                                    var aas = {{aas|safe}};
-                                    var ad = {{ad|safe}};
-                                    var ym = {{ym|safe}};
-                                    var ys = {{ys|safe}};
-                                    var wg = {{wg|safe}};
-                                    var wh = {{wh|safe}};
-                                    // var Val = document.getElementById("areaSelect").value;
-                                    var val = Val[Val.selectedIndex].value;
-                                    if (val == 'ng') document.write(ng);
-                                    if (val == 'dn') document.write(dn);
-                                    if (val == 'wh') document.write(wh);
-                                    if (val == 'sh') document.write(sh);
-                                    if (val == 'aas') document.write(aas);
-                                    if (val == 'ad') document.write(ad);
-                                    if (val == 'ym') document.write(ym);
-                                    if (val == 'ys') document.write(ys);
-                                    if (val == 'wg') document.write(wg);
-                                    if (val == 'wh') document.write(wh);
-                                }
-                            </script>
-<!--                            <script>-->
-<!--                                $(document).ready(function() {-->
-<!--                                      $('#areaSelect').change(function() {-->
-<!--                                        var result = $('#areaSelect option:selected').val();-->
-<!--                                        if (result == 'aas') {-->
-<!--                                          $('.div1').show();-->
-<!--                                        } else {-->
-<!--                                          $('.div1').hide();-->
-<!--                                        }-->
-<!--                                      });-->
-<!--                                    });-->
-<!--                            </script>-->
+                            <div class="col-sm-8">
+                                <select id="areaSelect" name="areaSelect" >
+                                    <option value="" selected>(지역을 선택하시오)</option>
+                                    <option value="ng">능곡</option>
+                                    <option value="dn">둔내</option>
+                                    <option value="sh">시화</option>
+                                    <option value="aas">아산</option>
+                                    <option value="ad">안덕</option>
+                                    <option value="ym">약목</option>
+                                    <option value="ys">연서</option>
+                                    <option value="wg">왜관</option>
+                                    <option value="wh">우항</option>
+                                </select>
+                                <input type="button" value="출력" onclick="takeApi(this.options[this.selectedIndex].value)">
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -164,7 +130,6 @@
                 <script src="../static/assets/js/breakpoints.min.js"></script>
                 <script src="../static/assets/js/util.js"></script>
                 <script src="../static/assets/js/main.js"></script>
-<!--                <script type="text/javascript" src="<c:url value='../static/assets/js/api.js' />"></script>-->
-
+                <script src="../static/assets/js/takeApi.js"></script>
     </body>
 </html>
