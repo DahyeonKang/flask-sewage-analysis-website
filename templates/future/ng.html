@@ -1,0 +1,56 @@
+<script>
+const area = document.getElementById('future_btn').options[document.getElementById("future_btn").selectedIndex].value;
+const printbtn = document.getElementById('printbtn');
+const result = document.getElementById('result');
+if (area == '능곡') {
+printbtn.addEventListener('click', (event) => {
+result.innerHTML = <div style="margin-left:50px; float:left;">
+    <figure><img src="../static/graph/arimaGraph/동부.png"></figure>
+</div>
+    <div style=" float:left;">
+        <table className="table-wrapper" width="100">
+            <thead>
+            <tr>
+                <td rowSpan="6">2021</td>
+                <td>7월</td>
+                <td>7.932547</td>
+                <td>7.722</td>
+                <td>8.143</td>
+            </tr>
+            <tr>
+                <td>8월</td>
+                <td>7.881944</td>
+                <td>7.657</td>
+                <td>8.106</td>
+            </tr>
+            <tr>
+                <td>9월</td>
+                <td>7.929402</td>
+                <td>7.668</td>
+                <td>8.191</td>
+            </tr>
+            <tr>
+                <td>10월</td>
+                <td>7.921802</td>
+                <td>7.645</td>
+                <td>8.199</td>
+            </tr>
+            <tr>
+                <td>11월</td>
+                <td>7.942725</td>
+                <td>7.648</td>
+                <td>8.237</td>
+            </tr>
+            <tr>
+                <td>12월</td>
+                <td>7.946741</td>
+                <td>7.641</td>
+                <td>8.253</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="clear:both;"></div>
+});
+}
+</script>
