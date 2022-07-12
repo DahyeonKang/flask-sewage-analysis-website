@@ -20,7 +20,7 @@ def past():
     return render_template('past.html')
 
 
-@app.route('/오늘의 수치')
+@app.route('/최근의 수치')
 def present():
     api = load_data()
     aas = api.data_4710_aas()
