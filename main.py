@@ -10,7 +10,7 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/하수처리장')
+@app.route('/시각화')
 def plant():
     return render_template('home2.html')
 
@@ -40,19 +40,19 @@ def future():
     return render_template('future.html')
 
 
-@app.route('/화학성분')
-def chemical():
-    return render_template('generic.html')
-
-
-@app.route('/지역')
+@app.route('/하수처리장')
 def area():
-    return render_template('area.html')
+    return render_template('plant.html')
 
 
 @app.route('/방류수질기준')
 def standard():
     return render_template('standard.html')
+
+
+@app.route('/우리는')
+def info():
+    return render_template('contributer.html')
 
 
 @app.route('/landing')
