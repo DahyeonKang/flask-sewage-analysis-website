@@ -1,18 +1,19 @@
 /*font source is CBNU site (http://www.chungbuk.ac.kr/site/70th/sub.do?key=1819) here.*/
 
 @font-face {
-    font-family: 'cbnu70-Regular';
+    font-family: 'cbnu70-regular';
     font-weight: normal;
+    font-style: normal;
     font-display:block;
-    src: url('../fonts/충북대학교70주년체_Regular.woff2') format('woff2');
-         url('../fonts/충북대학교70주년체_Regular.woff') format('woff');
-         url('../fonts/충북대학교70주년체_Regular.ttf') format('truetype');
+    src: url('../fonts/cbnu70-regular.woff2') format('woff2');
+         url('../fonts/cbnu70-regular.woff') format('woff');
+         url('../fonts/cbnu70-regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'cbnu70-Bold';
-    font-weight: normal;
+    font-family: 'cbnu70-bold';
+    font-style: normal;
     font-display:block;
-    src: url('../fonts/충북대학교70주년체_Bold.woff2') format('woff2');
-         url('../fonts/충북대학교70주년체_Bold.woff') format('woff');
-         url('../fonts/충북대학교70주년체_Bold.ttf') format('truetype');
+    src: url('../fonts/cbnu70-bold.woff2') format('woff2');
+         url('../fonts/cbnu70-bold.woff') format('woff');
+         url('../fonts/cbnu70-bold.ttf') format('truetype');
 }

@@ -50,6 +50,11 @@ def area():
     return render_template('area.html')
 
 
+@app.route('/방류수질기준')
+def standard():
+    return render_template('standard.html')
+
+
 @app.route('/landing')
 def landing():
     return render_template('landing.html')

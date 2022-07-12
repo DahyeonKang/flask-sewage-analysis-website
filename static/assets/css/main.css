@@ -117,7 +117,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #242943;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "cbnu70-regular";
 		font-size: 17pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -253,7 +253,7 @@ input, select, textarea {
 
 	code {
 		background: rgba(212, 212, 255, 0.035);
-		font-family: "Courier New", monospace;
+		font-family: "cbnu70-regular";
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -261,7 +261,7 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: "cbnu70-regular";
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -2018,7 +2018,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: 'cbnu70-bold';
 				font-weight: 900;
 			}
 
@@ -2112,7 +2112,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: 'cbnu70-regular';
 			font-weight: 400;
 		}
 
@@ -2129,7 +2129,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'cbnu70-regular';
 		}
 
 		.icon.alt:before {
@@ -2151,11 +2151,11 @@ input, select, textarea {
 	}
 
 	a.icon.alt:hover:before {
-		background-color: #097fd9;
+		background-color:  #097fd9;
 	}
 
 	a.icon.alt:active:before {
-		background-color: #097fd9;
+		background-color:  #097fd9;
 	}
 
 /* Image */
@@ -2402,12 +2402,12 @@ input, select, textarea {
 				}
 
 					ul.pagination li > .page.active:hover {
-						background-color:  #097fd9;
+						background-color: #097fd9;
 						color: #242943 !important;
 					}
 
 					ul.pagination li > .page.active:active {
-						background-color:  #097fd9;
+						background-color: #097fd9;
 					}
 
 			ul.pagination li:first-child {
@@ -2438,7 +2438,7 @@ input, select, textarea {
 	}
 
 	table {
-		margin: 0 0 2em 0;
+		margin: auto; /*0 0 2em 0;*/
 		width: 100%;
 	}
 
@@ -2448,7 +2448,7 @@ input, select, textarea {
 			border-right: 0;
 		}
 
-			table tbody tr:nth-child(n) {
+			table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(212, 212, 255, 0.08);
 			}
 
@@ -2461,7 +2461,7 @@ input, select, textarea {
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			text-align: center;
 		}
 
 		table thead {
@@ -2846,11 +2846,11 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+				background-color: #94e0f7;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+				background-color: #e7b788;
 			}
 
 			.tiles article:nth-child(6n):before {
@@ -3117,7 +3117,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #ffffff /*#2a2f4a*/;
+		background-color: #ffffff;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3147,7 +3147,7 @@ input, select, textarea {
 				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: #ffffff ;
+				background-color: #ffffff;
 				color: #242943;
 				display: inline-block;
 				line-height: 1.65em;
@@ -3418,7 +3418,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.1;
+			opacity: 0.3;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3592,7 +3592,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff/*#2a2f4a*/;
+		background-color: #ffffff;
 	}
 
 		#main > * {

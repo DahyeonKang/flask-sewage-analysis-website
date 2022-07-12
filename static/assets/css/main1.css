@@ -2151,11 +2151,11 @@ input, select, textarea {
 	}
 
 	a.icon.alt:hover:before {
-		background-color:  #097fd9;
+		background-color: #097fd9;
 	}
 
 	a.icon.alt:active:before {
-		background-color:  #097fd9;
+		background-color: #097fd9;
 	}
 
 /* Image */
@@ -2402,12 +2402,12 @@ input, select, textarea {
 				}
 
 					ul.pagination li > .page.active:hover {
-						background-color: #097fd9;
+						background-color:  #097fd9;
 						color: #242943 !important;
 					}
 
 					ul.pagination li > .page.active:active {
-						background-color: #097fd9;
+						background-color:  #097fd9;
 					}
 
 			ul.pagination li:first-child {
@@ -2448,7 +2448,7 @@ input, select, textarea {
 			border-right: 0;
 		}
 
-			table tbody tr:nth-child(2n + 1) {
+			table tbody tr:nth-child(n) {
 				background-color: rgba(212, 212, 255, 0.08);
 			}
 
@@ -2830,16 +2830,31 @@ input, select, textarea {
 				width: 60%;
 			}
 
-			.tiles article:nth-child(3n - 2):before {
+			.tiles article:nth-child(6n - 5):before {
+				/*background-color: #6fc3df;*/
 				background-color: #dbf5ff;
 			}
 
-			.tiles article:nth-child(3n - 1):before {
+			.tiles article:nth-child(6n - 4):before {
+				/*background-color: #8d82c4;*/
 				background-color: #b5eaff;
 			}
 
-			.tiles article:nth-child(3n):before {
+			.tiles article:nth-child(6n - 3):before {
+				/*background-color: #ec8d81;*/
 				background-color: #8bdcfc;
+			}
+
+			.tiles article:nth-child(6n - 2):before {
+				background-color: #e7b788;
+			}
+
+			.tiles article:nth-child(6n - 1):before {
+				background-color: #8ea9e8;
+			}
+
+			.tiles article:nth-child(6n):before {
+				background-color: #87c5a4;
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3102,7 +3117,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #ffffff;
+		background-color: #ffffff /*#2a2f4a*/;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3132,7 +3147,7 @@ input, select, textarea {
 				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: #ffffff;
+				background-color: #ffffff ;
 				color: #242943;
 				display: inline-block;
 				line-height: 1.65em;
@@ -3403,7 +3418,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.3;
+			opacity: 0.1;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3577,7 +3592,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: #ffffff/*#2a2f4a*/;
 	}
 
 		#main > * {
