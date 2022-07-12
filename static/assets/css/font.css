@@ -4,11 +4,15 @@
     font-family: 'cbnu70-Regular';
     font-weight: normal;
     font-display:block;
-    src: url('../fonts/충북대학교70주년체_Regular.ttf') format('truetype');
+    src: url('../fonts/충북대학교70주년체_Regular.woff2') format('woff2');
+         url('../fonts/충북대학교70주년체_Regular.woff') format('woff');
+         url('../fonts/충북대학교70주년체_Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'cbnu70-Bold';
     font-weight: normal;
     font-display:block;
-    src: url('../fonts/충북대학교70주년체_Bold.ttf') format('truetype');
+    src: url('../fonts/충북대학교70주년체_Bold.woff2') format('woff2');
+         url('../fonts/충북대학교70주년체_Bold.woff') format('woff');
+         url('../fonts/충북대학교70주년체_Bold.ttf') format('truetype');
 }
