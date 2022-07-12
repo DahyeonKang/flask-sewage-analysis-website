@@ -32,6 +32,7 @@ def present():
     wg = api.data_47850_wg()
     ng = api.data_48000_ng()
     sh = api.data_48000_sh()
+    # print("아산:\n", aas, "둔내:\n", dn, "우항:\n", wh, "연서:\n", ys, "안덕:\n", ad, "안목:\n", ym, "왜관:\n", wg, "능곡:\n", ng, "시화:\n", sh)
     return render_template('present.html', aas=aas, dn=dn, wh=wh, ys=ys, ad=ad, ym=ym, wg=wg, ng=ng, sh=sh)
 
 

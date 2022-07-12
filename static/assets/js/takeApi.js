@@ -1,25 +1,50 @@
-function takeApi(Val){
-    var ng = {{ng|safe}};
-    var dn = {{dn|safe}};
-    var sh = {{sh|safe}};
-    var aas = {{aas|safe}};
-    var ad = {{ad|safe}};
-    var ym = {{ym|safe}};
-    var ys = {{ys|safe}};
-    var wg = {{wg|safe}};
-    var wh = {{wh|safe}};
-    // var Val = document.getElementById("areaSelect").value;
-    var val = Val[Val.selectedIndex].value;
+function takeApi() {
+    var val = document.getElementById('recentArea_btn').options[document.getElementById("recentArea_btn").selectedIndex].value;
+    var ng = ng;
+    var dn = dn;
+    var sh = sh;
+    var aas = aas;
+    var ad = ad;
+    var ym = ym;
+    var ys = ys;
+    var wg = wg;
+    var wh = wh;
 
-    if (val == 'ng') div.insertAdjacentHTML('beforeend', ng)
-    // if (val == 'ng') document.write(ng);
-    if (val == 'dn') document.write(dn);
-    if (val == 'wh') document.write(wh);
-    if (val == 'sh') document.write(sh);
-    if (val == 'aas') document.write(aas);
-    if (val == 'ad') document.write(ad);
-    if (val == 'ym') document.write(ym);
-    if (val == 'ys') document.write(ys);
-    if (val == 'wg') document.write(wg);
-    if (val == 'wh') document.write(wh);
+    if (val == 'X') document.getElementById('result').innerHTML = '';
+    if (val == '능곡') document.getElementById('result').innerText = ng;
+    if (val == '둔내') document.getElementById('result').innerHTML = dn;
+    if (val == '시환') document.getElementById('result').innerHTML = '<div>{{sh | safe}}</div>';
+    if (val == '아산') document.getElementById('result').innerHTML = '<div>{{aas | safe}}</div>';
+    if (val == '안덕') document.getElementById('result').innerHTML = '<div>{{ad | safe}}</div>';
+    if (val == '약목') document.getElementById('result').innerHTML = '<div>{{ym | safe}}</div>';
+    if (val == '연서') document.getElementById('result').innerHTML = '<div>{{ys | safe}}</div>';
+    if (val == '왜관') document.getElementById('result').innerHTML = '<div>{{wg | safe}}</div>';
+    if (val == '우항') document.getElementById('result').innerHTML = '<div>{{wh | safe}}</div>';
 }
+
+// function takeApi() {
+//     var value = document.getElementById('recentArea_btn').options[document.getElementById("recentArea_btn").selectedIndex].value;
+//     // console.log(dn);
+//     // console.log(ng);
+//
+//     var ng = ${ng};
+//     // var dn = {{dn|safe}};
+//     // var sh = {{sh|safe}};
+//     // var aas = {{aas|safe}};
+//     // var ad = {{ad|safe}};
+//     // var ym = {{ym|safe}};
+//     // var ys = {{ys|safe}};
+//     // var wg = {{wg|safe}};
+//     // var wh = {{wh|safe}};
+//
+//     if (value == 'X') document.getElementById('result').innerHTML = '';
+//     if (val == '능곡') document.getElementById('result').innerText = ng;
+//     if (val == '둔내') document.getElementById('result').innerText = dn;
+//     if (val == '시환') document.getElementById('result').innerHTML = sh;
+//     if (val == '아산') document.getElementById('result').innerHTML = aas;
+//     if (val == '안덕') document.getElementById('result').innerHTML = ad;
+//     if (val == '약목') document.getElementById('result').innerHTML = ym;
+//     if (val == '연서') document.getElementById('result').innerHTML = ys;
+//     if (val == '왜관') document.getElementById('result').innerHTML = wg;
+//     if (val == '우항') document.getElementById('result').innerHTML = wh;
+// }

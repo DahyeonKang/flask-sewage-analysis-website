@@ -46,35 +46,38 @@
                     <section id="one">
                         <div class="inner">
                             <header class="major">
-                                <h1>오늘의 수치</h1>
+                                <h1>최근의 수치</h1>
                             </header>
                             <i>
-                                <h4>오늘의 날짜는
-                                    <script>
-                                        date = new Date().toLocaleDateString();
-                                        document.write(date);
-                                    </script>
-                                    입니다.
-                                </h4>
+                                <h4>오늘의 날짜는<script> date = new Date().toLocaleDateString(); document.write(date); </script>입니다.</h4>
                             </i>
-                            <p>각 하수처리장 별로 가지고 있는 가장 최근 데이터를 보여줍니다.</p>
-                            <div class="col-sm-8">
-                                <form>
-                                <select id="areaSelect" name="areaSelect" >
-                                    <option value="" selected>(지역을 선택하시오)</option>
-                                    <option value="ng">능곡</option>
-                                    <option value="dn">둔내</option>
-                                    <option value="sh">시화</option>
-                                    <option value="aas">아산</option>
-                                    <option value="ad">안덕</option>
-                                    <option value="ym">약목</option>
-                                    <option value="ys">연서</option>
-                                    <option value="wg">왜관</option>
-                                    <option value="wh">우항</option>
-                                </select>
-                                <input type="button" value="출력" onclick="takeApi(this.options[this.selectedIndex].value)">
-                                </form>
-                            </div>
+                            <p>각 하수처리장 별로 가지고 있는 가장 최근의 공공하수처리장의 화학성분 데이터를 보여줍니다.</p>
+<!--                            <div class="api-ng" style="display: none">{{ng | safe}}</div>-->
+<!--                            <div class="api-dn" style="display: none">{{dn | safe}}</div>-->
+<!--                            <div class="api-aas" style="display: none">{{aas | safe}}</div>-->
+<!--                            <div class="api-sh" style="display: none">{{sh | safe}}</div>-->
+<!--                            <div class="api-ad" style="display: none">{{ad | safe}}</div>-->
+<!--                            <div class="api-ym" style="display: none">{{ym | safe}}</div>-->
+<!--                            <div class="api-ys" style="display: none">{{ys | safe}}</div>-->
+<!--                            <div class="api-wg" style="display: none">{{wg | safe}}</div>-->
+<!--                            <div class="api-wh" style="display: none">{{wh | safe}}</div>-->
+
+                            <!-- Button -->
+                                <div class="button"><select id="recentArea_btn" name="recent_btn" onchange="takeApi();">
+                                    <option value="X">(지역을 선택하시오)</option>
+                                    <option value="능곡">능곡</option>
+                                    <option value="둔내">둔내</option>
+                                    <option value="시화">시화</option>
+                                    <option value="아산">아산</option>
+                                    <option value="안덕">안덕</option>
+                                    <option value="안목">약목</option>
+                                    <option value="연서">연서</option>
+                                    <option value="왜관">왜관</option>
+                                    <option value="우항">우항</option>
+                                </select></div>
+
+                            <!-- Button Result-->
+                                <div id='result'></div>
                         </div>
                     </section>
                 </div>

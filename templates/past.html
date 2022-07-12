@@ -47,20 +47,36 @@
 									<header class="major">
 										<h1>과거의 수치</h1>
 									</header>
-									<p>과거의 수치를 하수처리장 별로 보여줍니다.</p>
-									<figure>
-        								<img src="../static/graph/1_plant/47000_Bac.png">
-        								<img src="../static/graph/1_plant/50001_Bac.png">
-        								<img src="../static/graph/1_plant/50002_Bac.png">
-        								<img src="../static/graph/1_plant/50003_Bac.png">
-        								<img src="../static/graph/1_plant/60001_Bac.png">
-        								<img src="../static/graph/1_plant/87105_Bac.png">
-										<img src="../static/graph/1_plant/87201_Bac.png">
-										<img src="../static/graph/1_plant/87202_Bac.png">
-										<img src="../static/graph/1_plant/88001_Bac.png">
-										<img src="../static/graph/1_plant/90001_Bac.png">
-										<img src="../static/graph/1_plant/90002_Bac.png">
-    								</figure>
+									<p>공공하수처리시설의 방류량과 유출량을 선택한 지역과 화학성분에 대해 예측한 수치를 보여줍니다. <br>출력되는 그래프는 차례로 유출량에 대한 시계열 분해, 유출량/방출량 비교 시각화, 방출량에 대한 시계열 분해 그래프입니다.</p>
+
+									<!-- Button -->
+										<div class="button"><select id="pastArea_btn" name="past_btn" onchange="takePic_past();">
+											<option value="X">(지역을 선택하시오)</option>
+											<option value="능곡">능곡</option>
+											<option value="동부">동부</option>
+											<option value="둔내">둔내</option>
+											<option value="시화">시화</option>
+											<option value="약목">약목</option>
+											<option value="연서">연서</option>
+											<option value="왜관">왜관</option>
+											<option value="우항">우항</option>
+											<option value="장항">장항</option>
+											<option value="진보">진보</option>
+											<option value="횡성">횡성</option>
+										</select></div>
+										<div class="button"><select id="pastChem_btn" name="past_btn" onchange="takePic_past();">
+											<option value="X">(화학성분을 선택하시오)</option>
+											<option value="Bac">Bac</option>
+											<option value="Bod">Bod</option>
+											<option value="Cod">Cod</option>
+											<option value="Ss">Ss</option>
+											<option value="Tn">Tn</option>
+											<option value="Tp">Tp</option>
+										</select></div>
+										<label>(2가지 조건 모두 무조건 선택하세요.)</label>
+
+									<!-- Button Result-->
+										<div id='result'></div>
 								</div>
 							</section>
 					</div>
@@ -119,6 +135,7 @@
 			<script src="../static/assets/js/breakpoints.min.js"></script>
 			<script src="../static/assets/js/util.js"></script>
 			<script src="../static/assets/js/main.js"></script>
+			<script src="../static/assets/js/takePic.past.js"></script>
 
 	</body>
 </html>

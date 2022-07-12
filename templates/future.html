@@ -47,28 +47,27 @@
 									<header class="major">
 										<h1>예측한 미래의 수치</h1>
 									</header>
-									<p>동부하수처리시설의 BOD 수치에 대해 예측한 수치를 보여줍니다. Lo 80, Hi 80은 80%에 대한 신뢰구간을 나타냅니다.</p>
+									<p>공공하수처리시설의 BOD 수치를 선택한 지역에 대해 예측한 수치를 보여줍니다. <b>Lo 80</b>, <b>Hi 80</b>은 80%에 대한 신뢰구간을 나타냅니다.</p>
 
-									<!--button-->
-										<div class="button">
-											<select id="future_btn" name="future_btn" onchange="takePic();">
-												<option value="X">(지역을 선택하시오)</option>
-												<option value="능곡">능곡</option>
-												<option value="동부">동부</option>
-												<option value="둔내">둔내</option>
-												<option value="시화">시화</option>
-												<option value="약목">약목</option>
-												<option value="연서">연서</option>
-												<option value="우항">우항</option>
-												<option value="왜관">왜관</option>
-												<option value="우항">우항</option>
-												<option value="장항">장항</option>
-												<option value="진보">진보</option>
-												<option value="횡성">횡성</option>
-											</select>
-										</div>
-								<!--button_Result-->
-									<div id='result'></div>
+									<!-- Button -->
+										<div class="button"><select id="future_btn" name="future_btn" onchange="takePic_future();">
+											<option value="X">(지역을 선택하시오)</option>
+											<option value="능곡">능곡</option>
+											<option value="동부">동부</option>
+											<option value="둔내">둔내</option>
+											<option value="시화">시화</option>
+											<option value="약목">약목</option>
+											<option value="연서">연서</option>
+											<option value="우항">우항</option>
+											<option value="왜관">왜관</option>
+											<option value="우항">우항</option>
+											<option value="장항">장항</option>
+											<option value="진보">진보</option>
+											<option value="횡성">횡성</option>
+										</select></div>
+
+									<!-- Button Result -->
+										<div id='result'></div>
 								</div>
 							</section>
 					</div>
