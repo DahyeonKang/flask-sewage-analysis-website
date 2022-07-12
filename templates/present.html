@@ -59,6 +59,7 @@
                             </i>
                             <p>각 하수처리장 별로 가지고 있는 가장 최근 데이터를 보여줍니다.</p>
                             <div class="col-sm-8">
+                                <form>
                                 <select id="areaSelect" name="areaSelect" >
                                     <option value="" selected>(지역을 선택하시오)</option>
                                     <option value="ng">능곡</option>
@@ -72,6 +73,7 @@
                                     <option value="wh">우항</option>
                                 </select>
                                 <input type="button" value="출력" onclick="takeApi(this.options[this.selectedIndex].value)">
+                                </form>
                             </div>
                         </div>
                     </section>
