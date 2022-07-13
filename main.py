@@ -41,7 +41,7 @@ def future():
     return render_template('future.html')
 
 
-@app.route('/하수처리장')
+@app.route('/하수처리시설')
 def area():
     return render_template('plant.html')
 
