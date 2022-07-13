@@ -63,7 +63,7 @@ function takePic_future() {
     }
     if (value == '동부') {
         document.getElementById('result').innerHTML = '<div style="margin-left:50px; float:left;">' +
-            '<figure><img src="../static/graph/arimaGraph/능곡.png"></figure>' +
+            '<figure><img src="../static/graph/arimaGraph/동부.png"></figure>' +
             '</div>' +
             '<div style=" float:left;">' +
             '<table class="table-wrapper" width="100">' +
@@ -214,7 +214,7 @@ function takePic_future() {
             '<td>10월</td>' +
             '<td>6.330600</td>' +
             '<td>3.133</td>' +
-            '<td>9.664</td>' +
+            '<td>9.528</td>' +
             '</tr>' +
             '<tr>' +
             '<td>11월</td>' +
@@ -462,7 +462,7 @@ function takePic_future() {
     }
     if (value == '장항') {
         document.getElementById('result').innerHTML = '<div style="margin-left:50px; float:left;">' +
-            '<figure><img src="../static/graph/arimaGraph/우항.png"></figure>' +
+            '<figure><img src="../static/graph/arimaGraph/장항.png"></figure>' +
             '</div>' +
             '<div style=" float:left;">' +
             '<table class="table-wrapper" width="100">' +
@@ -605,7 +605,7 @@ function takePic_future() {
             '</tr>' +
             '<tr>' +
             '<td>9월</td>' +
-            '<td>2.03</td>' +
+            '<td>2.93</td>' +
             '<td>1.634</td>' +
             '<td>4.226</td>' +
             '</tr>' +
