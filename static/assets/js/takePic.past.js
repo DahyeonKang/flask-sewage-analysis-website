@@ -142,7 +142,7 @@ function takePic_past() {
     if (value == '시화' && chem == 'Bod') {
         document.getElementById('result').innerHTML = '<figure>' +
             '<img src="../static/graph/compareGraph/90001_Bod.png"><br>' +
-            '<img src="../static/graph/decomposeGraph/shsh_uBod.png">' +
+            '<img src="../static/graph/decomposeGraph/sh_uBod.png">' +
             '<img src="../static/graph/decomposeGraph/sh_bBod.png"></figure>';
 
     }
