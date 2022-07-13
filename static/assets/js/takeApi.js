@@ -1,5 +1,7 @@
-function takeApi(sh, ng) {
+function takeApi() {
     var val = document.getElementById('recentArea_btn').options[document.getElementById("recentArea_btn").selectedIndex].value;
+    console.log(ng);
+    console.log(ad);
 
     var sh = $(sh);
     // var ng = ng;
@@ -10,6 +12,9 @@ function takeApi(sh, ng) {
     // var ys = ys;
     // var wg = wg;
     // var wh = wh;
+    document.write(sh);
+    document.write(ng);
+    document.write(dn);
 
     if (val == 'X') document.getElementById('result').innerHTML = '';
     if (val == '능곡') document.getElementById('result').innerHTML = $(ng);

@@ -52,18 +52,12 @@
                                 <h4>오늘의 날짜는<script> date = new Date().toLocaleDateString(); document.write(date); </script>입니다.</h4>
                             </i>
                             <p>API에서 가지고 있는 가장 최근의 공공하수처리시설의 화학성분 데이터를 보여줍니다.</p>
-<!--                            <div class="api-ng" style="display: none">{{ng | safe}}</div>-->
-<!--                            <div class="api-dn" style="display: none">{{dn | safe}}</div>-->
-<!--                            <div class="api-aas" style="display: none">{{aas | safe}}</div>-->
-<!--                            <div class="api-sh" style="display: none">{{sh | safe}}</div>-->
-<!--                            <div class="api-ad" style="display: none">{{ad | safe}}</div>-->
-<!--                            <div class="api-ym" style="display: none">{{ym | safe}}</div>-->
-<!--                            <div class="api-ys" style="display: none">{{ys | safe}}</div>-->
-<!--                            <div class="api-wg" style="display: none">{{wg | safe}}</div>-->
-<!--                            <div class="api-wh" style="display: none">{{wh | safe}}</div>-->
-
+                            {{ng}}
+                            <script>
+                                var ng = {{ng|safe}};
+                            </script>
                             <!-- Button -->
-                                <div class="button"><select id="recentArea_btn" name="recent_btn" onchange="takeApi(sh, ng);">
+                                <div class="button"><select id="recentArea_btn" name="recent_btn" onchange="takeApi();">
                                     <option value="X">(지역을 선택하시오)</option>
                                     <option value="능곡">능곡</option>
                                     <option value="둔내">둔내</option>
